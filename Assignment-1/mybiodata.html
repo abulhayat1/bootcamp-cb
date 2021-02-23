@@ -5,9 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bio Data Form</title>
+    <style>
+        .center {
+            text-align: center;
+         }
+         
+         body {
+            background: #dfe6e9;
+            font-size: 20px;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .button{
+            background-color:#3498db;
+            border: none;
+            font-size: 16px;
+            text-align: center;
+            padding: 10px 20px;
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+            width: 20%;
+        }
+        
+        input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid #2980b9;
+        }
+        
+        input[type=email] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid#2980b9;
+        }
+        
+        input[type=tel] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid #2980b9 ;
+        }
+
+        
+    </style>
 </head>
 <body>
-    <h1>My Bio Data</h1>
+    <h1 class="center">Bio-Data Form</h1>
     <form action="" method="GET">
     <fieldset>
       <!--Personal Info-->
@@ -17,14 +72,15 @@
             <label>Last Name:</label>
             <input type="text" name="lname" placeholder="Last Name">
             </br>
-            <div class="control">
-              <label class="radio">Male:
+        </br>
+            <div class="control"> Gender: 
+              <label class="radio">Male
                 <input type="radio" name="gender">
               </label>
-              <label class="radio">Female:
+              <label class="radio">Female
                 <input type="radio" name="gender">
               </label>
-              <label>Other: <input type="radio" name="gender"></label>
+              <label>Other<input type="radio" name="gender"></label>
             </div></br>
             <label>Date Of Birth:  <input type="date" name="dob"></label>
             </br>
@@ -39,7 +95,8 @@
            <input type="text" name="height" placeholder="Height in Feet">
         </fieldset>
         <!--Education details-->
-        <fieldset>
+    </br>
+.        <fieldset>
             <legend>Education</legend>
             <label for="sname">School Name:</label>
             <input type="text" name="sname" placeholder="School Name"></br></br>
@@ -48,15 +105,17 @@
             <label for="stream">Stream:</label>
             <select id="stream">
                 <option value="" selected disabled hidden>Stream</option>
-                <option value="CSE">CSE</option>
-                <option value="EE">EE</option>
-                <option value="ME">ME</option>
-                <option value="CE">CE</option>
+                <option value="Science">Science</option>
+                <option value="Commerce ">Commerce </option>
+                <option value="Hu"> Humanities/Arts</option>
             </select></br></br>
             <label for="marksheet">Marksheet</label>
             <input type="file" name="marksheet" id="marksheet">
         </fieldset></br>
-        <input type="submit">
+        <div class="center">
+            <input type="submit" class="button">
+        </div>
+        
     </form>
 </body>
 </html>
