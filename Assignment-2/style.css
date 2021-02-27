@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  line-height: 3rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 18px;
+  background: #dfe6e9;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.phonebook-jumpto {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  top: 10px;
+  display: block;
+  overflow-y: scroll;
+  height: 100px;
+  width: 100%;
+}
+
+.phonebook-jumpto a {
+  margin: 2px;
+  text-decoration: none;
+  color: #0984e3;
+  font-size: 1.4em;
+}
+
+.phonebook-bar {
+  margin: auto;
+  padding: 10px;
+  background: #00cec9;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  border-bottom: 10px solid #2d3436;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.phoneBook-container {
+  background: #fafafa;
+  box-shadow: 0 7px 30px -10px rgba(150, 170, 100, 150);
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.phonebook-title {
+  background: #55efc4;
+  box-shadow: 0 7px 30px -10px rgba(150, 170, 100, 150);
+  position: sticky;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  padding: 0.5px 10px;
+}
+
+.phonebook-title h1::before {
+  content: "🧍- ";
+}
+
+ul {
+  list-style-type: square;
+  list-style-position: outside;
+  /*
+    list-style-image: url(https://cdn1.iconfinder.com/data/icons/free-98-icons/32/call-512.png);
+    */
+  display: table;
+  margin: 0 auto;
+}
+
+.phonebook-data {
+  font-weight: 500;
+}
+
+.jumptoup {
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+}
